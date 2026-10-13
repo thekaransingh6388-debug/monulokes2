@@ -1,168 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Bhardwaj - Way2Laabh Official</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4444412265887827');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4444412265887827&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-<title>Pankaj Bhardwaj | Official Landing Page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<meta name="description" content="Welcome to the official landing page of Pankaj Bhardwaj. Connect with us on Telegram.">
-<meta name="keywords" content="Pankaj Bhardwaj, Telegram, Official, Landing Page">
-<meta name="author" content="Pankaj Bhardwaj">
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --card-bg: #111411;
+            --card-border: #1f2a1f;
+            --accent-green: #25D366;
+            --text-main: #ffffff;
+            --text-muted: #888888;
+            --text-green-light: #6ee7b7;
+        }
 
-<meta property="og:title" content="Pankaj Bhardwaj">
-<meta property="og:description" content="Join our official Telegram channel.">
-<meta property="og:type" content="website">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px 10px;
+        }
 
-<!-- Meta Pixel Code (NEW PIXEL) -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1109607541564352');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1109607541564352&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
-<style>
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: #050505;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.05);
+            border: 1px solid #111;
+            position: relative;
+            overflow: hidden;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
 
-body{
-background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
-background-size:400% 400%;
-animation:bg 10s infinite alternate;
-color:#fff;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-}
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(180deg, #25D366, #0a0a0a);
+            position: relative;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
+        }
 
-@keyframes bg{
-0%{background-position:left;}
-100%{background-position:right;}
-}
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #000;
+        }
 
-.card{
-width:90%;
-max-width:450px;
-background:rgba(255,255,255,.1);
-backdrop-filter:blur(18px);
-border:1px solid rgba(255,255,255,.2);
-padding:40px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 20px 40px rgba(0,0,0,.3);
-}
+        .live-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            background-color: var(--accent-green);
+            color: #000;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            border: 2px solid #000;
+        }
 
-.profile{
-width:120px;
-height:120px;
-border-radius:50%;
-margin:auto;
-border:4px solid #fff;
-object-fit:cover;
-}
+        .separator {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #25D366, #f59e0b, transparent);
+            margin-bottom: 20px;
+        }
 
-h1{
-margin-top:20px;
-font-size:32px;
-}
+        /* Header Badges */
+        .official-badge {
+            background: linear-gradient(90deg, #0f2e1a, #1a4a2a);
+            color: var(--text-green-light);
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            border: 1px solid #25D366;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-p{
-margin:15px 0 30px;
-font-size:16px;
-line-height:1.7;
-color:#e5e7eb;
-}
+        .official-badge i {
+            color: var(--accent-green);
+        }
 
-.telegram-btn{
-display:block;
-padding:16px;
-background:#0088cc;
-text-decoration:none;
-color:#fff;
-font-size:18px;
-font-weight:600;
-border-radius:50px;
-transition:.3s;
-box-shadow:0 10px 25px rgba(0,136,204,.4);
-}
+        .profile-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-shadow: 0 0 10px rgba(37, 211, 102, 0.4);
+        }
 
-.telegram-btn:hover{
-transform:translateY(-4px);
-background:#0077b5;
-}
+        .profile-name i {
+            color: #3b82f6; /* Blue tick */
+            font-size: 20px;
+        }
 
-.footer{
-margin-top:25px;
-font-size:14px;
-opacity:.8;
-}
+        /* Sub Badges */
+        .sub-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
 
-</style>
+        .sub-badge {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-muted);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 500;
+        }
 
-<script>
-function openTelegram(){
+        .sub-badge span {
+            color: var(--accent-green);
+        }
 
-    // Standard Meta Pixel events
-    if (window.fbq) {
-        fbq('track', 'Lead');
-        fbq('track', 'Subscribe', { value: '1.00', currency: 'INR' });
-        fbq('trackCustom', 'Telegram_Click', {
-            button_name: 'Join Telegram'
-        });
-    }
+        .disclaimer-text {
+            color: #666;
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
 
-    // Open Telegram channel
-    setTimeout(function(){
-        window.open('https://t.me/+o8kp_wLSxU4zMWRl','_blank');
-    }, 300);
+        /* CTA Button */
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: linear-gradient(180deg, #25D366, #1da851);
+            color: #fff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            gap: 10px;
+        }
 
-}
-</script>
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
 
+        .cta-btn i {
+            background: #fff;
+            color: #25D366;
+            border-radius: 50%;
+            padding: 2px;
+            font-size: 14px;
+        }
+
+        /* Grid Cards */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .grid-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 15px 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .grid-card i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .grid-card .title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .grid-card .subtitle {
+            font-size: 9px;
+            color: var(--text-muted);
+        }
+
+        /* Specific colors for grid icons */
+        .icon-nifty { color: #8b5cf6; }
+        .icon-bank { color: #a855f7; }
+        .icon-sensex { color: #ec4899; }
+        .icon-gold { color: #f59e0b; }
+        .icon-forex { color: #3b82f6; }
+        .icon-crypto { color: #eab308; }
+
+        /* Stats Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        .stat-item .val {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        .stat-item .lbl {
+            font-size: 9px;
+            color: var(--text-muted);
+        }
+
+        /* List Items */
+        .list-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            gap: 15px;
+            transition: background 0.3s;
+        }
+
+        .list-item:hover {
+            background-color: #1a1a1a;
+        }
+
+        .list-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #0d1f12;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--accent-green);
+            flex-shrink: 0;
+            border: 1px solid #25D36633;
+        }
+
+        .list-content h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        .list-content p {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .footer p {
+            font-size: 10px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+        .agency-text {
+            font-size: 11px;
+            color: #888;
+            font-weight: 600;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .profile-name { font-size: 22px; }
+            .grid-card .title { font-size: 11px; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="card">
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-img-container">
+                <!-- Updated Logo URL -->
+                <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" alt="Pankaj Bhardwaj" class="profile-img">
+                <span class="live-badge">LIVE</span>
+            </div>
+            <div class="separator"></div>
+            
+            <div class="official-badge">
+                <i class="fas fa-heart"></i> WAY2LAABH OFFICIAL <i class="fas fa-heart"></i>
+            </div>
+            
+            <h1 class="profile-name">
+                Pankaj Bhardwaj <i class="fas fa-check-circle"></i>
+            </h1>
 
-<img src="https://karanmetalabe.com/wp-content/uploads/2026/08/images-21.jpg" class="profile" alt="Pankaj Bhardwaj Logo">
+            <div class="sub-badges">
+                <span class="sub-badge">🎯 Way2Laabh - Free Market Awareness Community</span>
+                <span class="sub-badge">Free Financial Literacy - India 🇮🇳 - Educational Content Only</span>
+                <span class="sub-badge">🎯 Educational Awareness Only - Not Financial Advice</span>
+            </div>
+        </div>
 
-<h1>Pankaj Bhardwaj</h1>
+        <!-- Main CTA Button with Event Tracking -->
+        <a href="https://t.me/+o8kp_wLSxU4zMWRl" class="cta-btn" onclick="fbq('track', 'Lead');">
+            <i class="fas fa-play"></i> Join Free Community Now
+        </a>
 
-<p>
-Welcome to my official page.<br>
-Click the button below to join our Telegram community and stay updated.
-</p>
+        <!-- Grid Section 1 -->
+        <div class="grid-3">
+            <div class="grid-card">
+                <i class="fas fa-chart-line icon-nifty"></i>
+                <div class="title">NIFTY</div>
+                <div class="subtitle">Awareness</div>
+            </div>
+            <div class="grid-card">
+                <i class="fas fa-university icon-bank"></i>
+                <div class="title">BANKNIFTY</div>
+                <div class="subtitle">Education</div>
+            </div>
+            <div class="grid-card">
+                <i class="fas fa-chart-bar icon-sensex"></i>
+                <div class="title">SENSEX</div>
+                <div class="subtitle">Awareness</div>
+            </div>
+            <div class="grid-card">
+                <i class="fas fa-coins icon-gold"></i>
+                <div class="title">GOLD</div>
+                <div class="subtitle">Awareness</div>
+            </div>
+            <div class="grid-card">
+                <i class="fas fa-exchange-alt icon-forex"></i>
+                <div class="title">FOREX</div>
+                <div class="subtitle">Concepts</div>
+            </div>
+            <div class="grid-card">
+                <i class="fab fa-bitcoin icon-crypto"></i>
+                <div class="title">CRYPTO</div>
+                <div class="subtitle">Education</div>
+            </div>
+        </div>
 
-<a href="javascript:void(0)" onclick="openTelegram()" class="telegram-btn">
-📲 Join Pankaj Sir Telegram
-</a>
+        <!-- Stats Row -->
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="val">Free</div>
+                <div class="lbl">Always</div>
+            </div>
+            <div class="stat-item">
+                <div class="val">6+</div>
+                <div class="lbl">Markets</div>
+            </div>
+            <div class="stat-item">
+                <div class="val">Daily</div>
+                <div class="lbl">Content</div>
+            </div>
+            <div class="stat-item">
+                <div class="val">India</div>
+                <div class="lbl">Wide</div>
+            </div>
+        </div>
 
-<div class="footer">
-© 2026 Pankaj Bhardwaj • All Rights Reserved
-</div>
+        <!-- List Items -->
+        <div class="list-item">
+            <div class="list-icon"><i class="fas fa-chart-pie"></i></div>
+            <div class="list-content">
+                <h4>Market Awareness Basics</h4>
+                <p>How financial markets work — educational only</p>
+            </div>
+        </div>
 
-</div>
+        <div class="list-item">
+            <div class="list-icon"><i class="fas fa-newspaper"></i></div>
+            <div class="list-content">
+                <h4>Financial News & Analysis</h4>
+                <p>Understand economic news clearly</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <div class="list-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="list-content">
+                <h4>Risk Awareness Education</h4>
+                <p>Understanding market risk — essential</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <div class="list-icon"><i class="fas fa-book-open"></i></div>
+            <div class="list-content">
+                <h4>Index Education</h4>
+                <p>Nifty, BankNifty, Sensex — awareness only</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Free educational awareness only - Not investment advice - Market investments involve risk.</p>
+            <p>Contact: Way2Laabh</p>
+            <div class="agency-text">Ad Manage by Karan Agency</div>
+        </div>
+    </div>
 
 </body>
 </html>
